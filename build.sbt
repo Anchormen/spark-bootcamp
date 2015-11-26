@@ -1,4 +1,5 @@
 name := "Anchormen SparkTraining"
+scalaVersion := "2.10.6"
 
 /** Common settings for all projects **/
 lazy val settings = Seq(
