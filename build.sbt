@@ -7,6 +7,7 @@ lazy val settings = Seq(
   isSnapshot := true,
   version := "0.0.1-SNAPSHOT",
   crossPaths := false,
+  EclipseKeys.withSource := true,
   scalaVersion := "2.10.6"
 )
 
@@ -17,7 +18,8 @@ lazy val dependencies = Seq(
   libraryDependencies += "org.mockito" % "mockito-all" % "2.0.2-beta" % "test",
   libraryDependencies += "org.apache.spark" %% "spark-core" % "1.4.1",
   libraryDependencies += "org.apache.spark" %% "spark-sql" % "1.4.1",
-  libraryDependencies += "org.apache.spark" %% "spark-mllib" % "1.4.1"
+  libraryDependencies += "org.apache.spark" %% "spark-mllib" % "1.4.1",
+  libraryDependencies += "com.databricks" %% "spark-csv" % "1.3.0"
 )
 
 lazy val root = (project in file("."))
