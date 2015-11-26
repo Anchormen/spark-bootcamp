@@ -31,6 +31,13 @@ object JokeRecommendations {
    val alsEstimator = new ALS
    val model = alsEstimator.fit(ratings)
    
+   // Predict on the original data
+   import sqlContext.implicits._
+   val predictions = model.transform(ratings.select($"user", $"item"))
+   
+   predictions.where($"user" === 1 && $"item" < 20).show
+   ratings.where($"user" === 1 && $"item" < 20).show
+   
    sparkContext.stop()
   }
   
