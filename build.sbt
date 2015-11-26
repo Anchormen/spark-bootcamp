@@ -1,5 +1,6 @@
 name := "Anchormen SparkTraining"
-scalaVersion := "2.10.6"
+//scalaVersion := "2.10.6"
+scalaVersion := "2.11.7"
 
 /** Common settings for all projects **/
 lazy val settings = Seq(
@@ -8,7 +9,7 @@ lazy val settings = Seq(
   version := "0.0.1-SNAPSHOT",
   crossPaths := false,
   EclipseKeys.withSource := true,
-  scalaVersion := "2.10.6"
+  scalaVersion := "2.11.7"
 )
 
 lazy val dependencies = Seq(
