@@ -67,3 +67,5 @@ local.properties
 # STS (Spring Tool Suite)
 .springBeans
 
+.cache-main
+.cache-test
