@@ -62,7 +62,7 @@ object DigitRecognizer {
   
   def loadTrainingData(sqlContext : SQLContext, path : String) : RDD[(Int,Vector)] = {
     import com.databricks.spark.csv._
-    val dataMatrix = sqlContext.csvFile(path, false)
+    val dataMatrix = sqlContext.csvFile(path, true)
 
     dataMatrix.rdd
       .map( row => (row.toSeq.head.toString.toInt, row.toSeq.tail.map(_.toString.toDouble))) // (label, features as sequence)
