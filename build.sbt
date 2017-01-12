@@ -6,7 +6,6 @@ lazy val settings = Seq(
   isSnapshot := true,
   version := "0.0.1-SNAPSHOT",
   crossPaths := false,
-  EclipseKeys.withSource := true,
   scalaVersion := "2.10.6"
 )
 
