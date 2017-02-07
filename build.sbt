@@ -16,7 +16,8 @@ lazy val dependencies = Seq(
   libraryDependencies += "org.mockito" % "mockito-all" % "2.0.2-beta" % "test",
   libraryDependencies += "org.apache.spark" %% "spark-core" % sparkVersion,
   libraryDependencies += "org.apache.spark" %% "spark-sql" % sparkVersion,
-  libraryDependencies += "org.apache.spark" %% "spark-mllib" % sparkVersion
+  libraryDependencies += "org.apache.spark" %% "spark-mllib" % sparkVersion,
+  libraryDependencies += "com.databricks" %% "spark-csv" % "1.3.0"
 )
 
 lazy val root = (project in file("."))
