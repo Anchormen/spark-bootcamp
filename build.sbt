@@ -6,7 +6,7 @@ lazy val settings = Seq(
   isSnapshot := true,
   version := "0.0.1-SNAPSHOT",
   crossPaths := false,
-  scalaVersion := "2.10.8"
+  scalaVersion := "2.11.8"
 )
 
 val sparkVersion = "2.0.1"
